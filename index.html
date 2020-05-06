@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
   <title>Clone AirBnb</title>
 </head>
+
 <body>
-  <header>  
+  <header>
     <div class="container">
       <nav class="nav_class">
-          <a href="#"><img src="./assets/logo.svg" class="logo" alt="logotipo clone AirBnb"></a>
+        <a href="#"><img src="./assets/logo.svg" class="logo" alt="logotipo clone AirBnb"></a>
         <ul>
           <li><a href="#">Hospede em sua acomodação</a></li>
           <li><a href="#">Hospede um experiência</a></li>
@@ -21,6 +25,284 @@
       </nav>
     </div>
   </header>
-  
+
+  <div class="container align-content">
+    <form class="flex-form" action="">
+      <input type="search" name="destination" placeholder="Where do you want to go?" id="">
+
+      <label for="from">From</label>
+      <input type="date" name="from">
+
+      <label for="to">To</label>
+      <input type="date" name="to">
+
+      <select>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5 Guests</option>
+      </select>
+
+      <input type="submit" name="search" id="search" value="Search">
+    </form>
+  </div>
+
+  <section id="card" class="container align-content">
+    <div class="text-card">
+      <h2>Podemos estar afastados,<br>
+        mas vamos superar isso<br>
+        juntos.</h2>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://www.lupadigital.info/wp-content/uploads/2018/05/imagens-gratis.jpg" alt="">
+        </div>
+        <div class="card-text">
+          <span>Novo</span>
+          <h2>Apartamento</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quod.</p>
+
+        </div>
+        <div class="card-stats"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="https://www.lupadigital.info/wp-content/uploads/2018/05/imagens-gratis.jpg" alt="">
+        </div>
+        <div class="card-text">
+          <span>Novo</span>
+          <h2>Apartamento</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quod.</p>
+
+        </div>
+        <div class="card-stats"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="https://www.lupadigital.info/wp-content/uploads/2018/05/imagens-gratis.jpg" alt="">
+        </div>
+        <div class="card-text">
+          <span>Novo</span>
+          <h2>Apartamento</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, quod.</p>
+
+        </div>
+        <div class="card-stats"></div>
+      </div>
+
+
+
+    </div>
+
+
+  </section>
+
+  <div id="expiriences" class="align-content">
+    <div class="container">
+      <div class="exp_text">
+        <div class="exp_descript">
+          <h2>Apresentamos as experiências online</h2>
+          <p>Agora você pode conhecer pessoas do mundo inteiro enquanto experimenta algo novo.<br>
+            Participe de sessões de vídeo
+            interativas ao vivo oferecidas por anfitriões especialistas — tudo isso sem sair de casa.</p>
+        </div>
+        <a href="#">Explorar</a>
+      </div>
+
+      <div class="grids">
+        <div class="grid_area"></div>
+        <div class="grid_area"></div>
+        <div class="grid_area"></div>
+      </div>
+
+    </div>
+  </div>
+  <!-- ------------------SUB FOOTER -------------------------- -->
+  <div class="sub_footer">
+    <div class="container">
+      <section class="footer_area">
+        <h1>Fique por dentro</h1>
+        <div class="footer_container">
+          <section class="footer_content">
+            <h2 class="h2">
+              <div class="top-1">Para hóspedes</div>
+            </h2>
+            <a href="#">
+              <span class="span_title">
+                <b>Atualizações sobre viagens</b>
+              </span>
+              <span class="desc_span">O que você deve saber</span>
+            </a>
+            <a href="#">
+              <span class="span_title">
+                <b>Opções de Cancelamento</b>
+              </span>
+              <span class="desc_span">Saiba o que está coberto</span>
+            </a>
+            <a href="#">
+              <span class="span_title">
+                <b>Central de Ajuda</b>
+              </span>
+              <span class="desc_span">Ajuda</span>
+            </a>
+          </section>
+
+          <section class="footer_content">
+            <h2 class="h2">
+              <div class="top-1">
+                Para anfitriões</div>
+            </h2>
+            <a href="#">
+              <span class="span_title">
+                <b>Mensagem de Brian Checsky</b>
+              </span>
+              <span class="desc_span">Mensagem do nosso CEO</span>
+            </a>
+            <a href="#">
+              <span class="span_title">
+                <b>Recursos para hospedagem</b>
+              </span>
+              <span class="desc_span">Como mitigar os efeitos da COVID-19</span>
+            </a>
+            <a href="#">
+              <span class="span_title">
+                <b>Ofereça acomodações na linha de frente</b>
+              </span>
+              <span class="desc_span">Saiba como ajudar</span>
+            </a>
+          </section>
+
+          <section class="footer_content">
+            <h2 class="h2">
+              <div class="top-1">Para pessoas combatendo a COVID-19</div>
+            </h2>
+            <a href="#">
+              <span class="span_title">
+                <b>Acomodações na linha de frente</b>
+              </span>
+              <span class="desc_span">Saiba mais sobre o programa</span>
+            </a>
+            <a href="#">
+              <span class="span_title">
+                <b>Cadastre-se</b>
+              </span>
+              <span class="desc_span">Consulte as opções de acomodação</span>
+            </a>
+            <a href="#">
+              <span class="span_title">
+                <b>Faça uma doação</b>
+              </span>
+              <span class="desc_span">Apoie organizações sem fins lucrativos</span>
+            </a>
+          </section>
+
+          <section class="footer_content">
+            <h2 class="h2">
+              <div class="top-1"> Mais </div>
+            </h2>
+            <a href="#">
+              <span class="span_title">
+                <b>Sala de Imprensa do Airbnb</b>
+              </span>
+              <span class="desc_span">Últimas informações</span>
+            </a>
+            <a href="#">
+              <span class="span_title">
+                <b>Organização mundial da saúde</b>
+              </span>
+              <span class="desc_span">Recomendações e atualizações</span>
+            </a>
+          </section>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- ---------------------------- FIM SUB FOOTER -------------- -->
+
+  <div class="menu_footer">
+    <div class="container">
+      <div class="flex_items">
+        <section class="menu_section_footer">
+          <h4>Sobre</h4>
+          <ul>
+            <li><a href="#">Diversidade e pertencimento</a></li>
+            <li><a href="#">Acessibilidade</a></li>
+            <li><a href="#">Confiança e segurança</a></li>
+            <li><a href="#">Airbnb Citizen</a></li>
+            <li><a href="#">Newsroom</a></li>
+          </ul>
+        </section>
+
+        <section class="menu_section_footer">
+          <h4>Comunidade</h4>
+          <ul>
+            <li><a href="#">Airbnb Magazine</a></li>
+            <li><a href="#">Airbnb for Work</a></li>
+            <li><a href="#">Convide amigos</a></li>
+            <li><a href="#">Carreiras</a></li>
+          </ul>
+        </section>
+
+        <section class="menu_section_footer">
+          <h4>Anfitrião</h4>
+          <ul>
+            <li><a href="#">Hospede em sua acomodação</a></li>
+            <li><a href="#">Ofereça uma experiência</a></li>
+            <li><a href="#">Hospedagem responsável</a></li>
+            <li><a href="#">Open Homes</a></li>
+            <li><a href="#">Olimpíadas</a></li>
+            <li><a href="#">Central de Recursos</a></li>
+          </ul>
+        </section>
+
+        <section class="menu_section_footer">
+          <h4>Atendimento</h4>
+          <ul>
+            <li><a href="#">Central de Ajuda</a></li>
+            <li><a href="#">Atendimento ao Bairro</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <footer>
+        <div class="style_footer">
+          <div class="informations">
+            <ul>
+              <li>© 2020 Airbnb, Inc. All rights reserved</li>
+              <li><a href="#">Privacidade</a></li>
+              <li><a href="#">Termo</a></li>
+              <li><a href="#">Mapa do site</a></li>
+            </ul>
+          </div>
+
+          <div class="socias">
+            <ul>
+              <li><a href="#">
+                  <i class="fas fa-globe"></i>   Português (BR)
+                </a></li>
+              <li><a href="#">R$ Real</a></li>
+              <li><a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a></li>
+              <li><a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a></li>
+              <li><a href="#">
+                  <i class="fab fa-instagram"></i>
+
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
 </body>
+
 </html>

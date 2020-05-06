@@ -16,7 +16,8 @@ header {
 }
 
 .container  {
-  max-width: 1120px;
+  max-width: 980px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -25,22 +26,23 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  padding: 10px;
 }
 
 nav.nav_class .logo {
-  width: 170px;
+  width: 100px;
+  padding: 20px 0;
 }
 
 nav.nav_class ul {
   list-style: none;
-  margin-left: 220px;
+  line-height: 80px;
+
 }
 
 nav.nav_class li {
   list-style: none;
   display: inline;
-  margin-right: 15px;
+  margin-right: 12px;
   align-self: flex-end;
 }
 
@@ -67,4 +69,280 @@ nav.nav_class li a:hover {
 nav button:hover {
   background-color: #cb6461;
   color: #FFF;
+}
+
+/* ------------- INPUT FORM -------------------- */
+.align-content {
+  margin-top: 7%;
+}
+
+.flex-form {
+  display: flex;
+
+  border: 1px solid #DADADA99;
+  border-radius: 10px;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background: white;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+input {
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: orange;
+}
+
+input[type="search"] {
+  flex-basis: 100%;
+}
+
+label {
+  margin-right: 20px;
+}
+
+/* ------------------- SESSÃO DE CARDS ----------- */
+
+.text-card {
+  font-size: 24px;
+}
+
+.cards {
+  margin-top: 40px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards .card {
+  /* margin: 20px; */
+  /* padding: 10px; */
+  text-align: start;
+  width: 320px;
+  height: 320px;
+  border: 1px solid #DADADA99;
+  border-radius: 5px;
+}
+
+.cards .card img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-size: cover;
+}
+
+.cards .card .card-text {
+  margin-left: 3%;
+  margin-top: 5%;
+}
+/* ----------------- sessão experiencias --------------- */
+#expiriences {
+  width: 100%;
+  height: 500px;
+  background-color: #000;
+}
+
+.exp_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFF;
+}
+ 
+.exp_text .exp_descript {
+  margin-top: 3%;
+}
+
+.exp_descript h2 {
+  font-size: 24px;
+}
+
+.exp_descript p {
+  font-size: 12px;
+}
+
+.exp_text a {
+  width: 120px;
+  height: 25px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid;
+  color: #FFF;
+  outline: none;
+}
+
+.exp_text a:hover {
+  background-color: #777;
+  border: none;
+}
+
+.grids {
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; 
+}
+
+.grids .grid_area {
+  width: 100%;
+  background-color: #FFF;
+}
+
+/* --------------- SUB FOOTER ------------------ */
+
+.sub_footer {
+  width: 100%;
+  background-color: #e5e5e5;
+}
+
+.sub_footer section.footer_area {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.sub_footer section.footer_area h1 {
+  font-size: 24px;
+  margin: 20px 0;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  color: #777;
+}
+
+.sub_footer section.footer_area .footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub_footer section.footer_area .footer_container .h2 {
+    color: inherit !important;
+    font-size: 1em !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.sub_footer section.footer_area .footer_container .h2 .top-1 {
+  font-size: 14px ;
+  line-height: 24px ;
+  padding-bottom: 16px ;
+
+}
+
+.sub_footer section.footer_area .footer_container a {
+    /* -webkit-box-direction: normal !important;
+    -webkit-box-orient: vertical !important; */
+    display: flex !important;
+    flex-direction: column !important;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    text-decoration: none;
+    color: rgb(34, 34, 34) !important;
+    padding: 16px 0px !important;
+    border-top: 1px solid rgb(221, 221, 221) !important;
+}
+
+.sub_footer section.footer_area .footer_container a .span_title {
+  font-weight: 200;
+}
+
+.sub_footer section.footer_area .footer_container a .desc_span {
+  white-space: pre-wrap !important;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  color: rgb(113, 113, 113) !important;
+}
+/* ------------------------ MENU FOOTER --------------------------- */
+.menu_footer {
+  width: 100%;
+}
+
+.menu_footer .flex_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.menu_footer .flex_items section.menu_section_footer {
+  padding: 10px 0;
+}
+.menu_footer .flex_items section.menu_section_footer ul {
+  list-style: none;
+  margin-top: 10px;
+}
+div.menu_footer .flex_items section.menu_section_footer ul li {
+  padding: 3px 0;
+}
+div.menu_footer .flex_items section.menu_section_footer ul li  a{
+  text-decoration: none;
+  font-size: 10px;
+}
+
+div.menu_footer .style_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(221, 221, 221);
+}
+
+div.menu_footer .informations {
+  padding: 20px 0;
+}
+
+div.menu_footer .informations ul {
+  list-style: none;
+}
+
+div.menu_footer .informations ul li {
+  display: inline-block;
+  margin-right: 10px;
+  color: #000;
+  font-size: 10px;
+}
+
+div.menu_footer .informations ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 10px;
+}
+
+div.menu_footer .informations ul li a:hover {
+  text-decoration: underline;
+}
+
+div.menu_footer .socias {
+ padding: 20px 0;
+}
+
+div.menu_footer .socias ul {
+  list-style: none;
+}
+
+div.menu_footer .socias ul li {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+div.menu_footer .socias ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+div.menu_footer .socias ul li a:hover {
+  color: #cb6461;
+}
+
+div.menu_footer .socias ul li:nth-child(1){
+  margin-right: 15px;
+}
+
+div.menu_footer .socias ul li:nth-child(2){
+  margin-right: 15px;
 }
