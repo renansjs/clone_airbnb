@@ -1,348 +1,297 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ------------------------------ HEADER CSS --------------------------------- */
 
 header {
   width: 100%;
   height: 80px;
-  background-color: #DADADA;
-}
-
-.container  {
-  max-width: 980px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.container nav.nav_class {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* z-index: 10; */
+  background-color: #EEE;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-nav.nav_class .logo {
-  width: 100px;
-  padding: 20px 0;
-}
-
-nav.nav_class ul {
-  list-style: none;
+.logo {
+  width: 180px;
+  margin-left: 120px;
   line-height: 80px;
 
+  padding: 10px 0;
 }
 
-nav.nav_class li {
+
+nav ul {
   list-style: none;
-  display: inline;
-  margin-right: 12px;
-  align-self: flex-end;
+  margin-right: 100px;
+
 }
 
-nav.nav_class li a {
+nav ul li {
   text-decoration: none;
-  font-size: 14px;
-  color: #707070;
+  display: inline;
+  padding: 10px 0;
+  line-height: 80px;
 }
 
-nav button {
-  border-style: none;
-  width: 150px;
-  height: 40px;
-  border-radius: 24px;
-  background-color: #FFF;
-  color: #707070;
-  transition: all 0.6s;
-}
-
-nav.nav_class li a:hover {
-  color: #909090;
-} 
-
-nav button:hover {
-  background-color: #cb6461;
-  color: #FFF;
-}
-
-/* ------------- INPUT FORM -------------------- */
-.align-content {
-  margin-top: 7%;
-}
-
-.flex-form {
-  display: flex;
-
-  border: 1px solid #DADADA99;
-  border-radius: 10px;
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  background: white;
-  line-height: 50px;
-  font-size: 18px;
-}
-
-input {
-  border: none;
-}
-
-input[type="submit"] {
-  background-color: orange;
-}
-
-input[type="search"] {
-  flex-basis: 100%;
-}
-
-label {
+nav ul li:nth-child(1){
   margin-right: 20px;
 }
 
-/* ------------------- SESSÃO DE CARDS ----------- */
-
-.text-card {
-  font-size: 24px;
+nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: red;
 }
+
+nav ul li a:hover {
+  color: rgb(162, 9, 9);
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 .cards {
-  margin-top: 40px;
   display: flex;
-  position: relative;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  
 }
 
-.cards .card {
-  /* margin: 20px; */
-  /* padding: 10px; */
-  text-align: start;
-  width: 320px;
-  height: 320px;
-  border: 1px solid #DADADA99;
-  border-radius: 5px;
-}
 
-.cards .card img {
-  width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background-size: cover;
-}
-
-.cards .card .card-text {
-  margin-left: 3%;
-  margin-top: 5%;
-}
-/* ----------------- sessão experiencias --------------- */
-#expiriences {
-  width: 100%;
+.card {
+  width: 350px;
   height: 500px;
-  background-color: #000;
-}
-
-.exp_text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #FFF;
-}
- 
-.exp_text .exp_descript {
-  margin-top: 3%;
-}
-
-.exp_descript h2 {
-  font-size: 24px;
-}
-
-.exp_descript p {
-  font-size: 12px;
-}
-
-.exp_text a {
-  width: 120px;
-  height: 25px;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 8px;
-  border: 1px solid;
-  color: #FFF;
-  outline: none;
-}
+  border: 1px solid #EEE;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
 
-.exp_text a:hover {
-  background-color: #777;
-  border: none;
-}
-
-.grids {
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr; 
-}
-
-.grids .grid_area {
-  width: 100%;
-  background-color: #FFF;
-}
-
-/* --------------- SUB FOOTER ------------------ */
-
-.sub_footer {
-  width: 100%;
-  background-color: #e5e5e5;
-}
-
-.sub_footer section.footer_area {
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.sub_footer section.footer_area h1 {
-  font-size: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 20px 0;
-  font-weight: 400;
-  letter-spacing: -0.8px;
-  color: #777;
 }
 
-.sub_footer section.footer_area .footer_container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.sub_footer section.footer_area .footer_container .h2 {
-    color: inherit !important;
-    font-size: 1em !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-    margin: 0px !important;
-    padding: 0px !important;
-}
-
-.sub_footer section.footer_area .footer_container .h2 .top-1 {
-  font-size: 14px ;
-  line-height: 24px ;
-  padding-bottom: 16px ;
-
-}
-
-.sub_footer section.footer_area .footer_container a {
-    /* -webkit-box-direction: normal !important;
-    -webkit-box-orient: vertical !important; */
-    display: flex !important;
-    flex-direction: column !important;
-    font-size: 12px !important;
-    line-height: 20px !important;
-    text-decoration: none;
-    color: rgb(34, 34, 34) !important;
-    padding: 16px 0px !important;
-    border-top: 1px solid rgb(221, 221, 221) !important;
-}
-
-.sub_footer section.footer_area .footer_container a .span_title {
-  font-weight: 200;
-}
-
-.sub_footer section.footer_area .footer_container a .desc_span {
-  white-space: pre-wrap !important;
-  font-size: 12px !important;
-  line-height: 18px !important;
-  color: rgb(113, 113, 113) !important;
-}
-/* ------------------------ MENU FOOTER --------------------------- */
-.menu_footer {
+.card img {
   width: 100%;
+  height: 268px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
-.menu_footer .flex_items {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0;
+.card h2 {
+  font-size: 1.6rem;
+  padding: 0 10px;
 }
 
-.menu_footer .flex_items section.menu_section_footer {
-  padding: 10px 0;
-}
-.menu_footer .flex_items section.menu_section_footer ul {
-  list-style: none;
-  margin-top: 10px;
-}
-div.menu_footer .flex_items section.menu_section_footer ul li {
-  padding: 3px 0;
-}
-div.menu_footer .flex_items section.menu_section_footer ul li  a{
-  text-decoration: none;
-  font-size: 10px;
+
+.card p {
+  padding: 0 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-div.menu_footer .style_footer {
-  display: flex;
-  justify-content: space-between;
+/* ------ about -------- */
+
+/* Style About */
+div.about-me{
+  width: 90%;
+  max-width: 980px;
+  margin: 60px auto;
+  margin-top: 25%;
+  background: #fafafa;
+  padding: 20px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-color: #e0e0e1;
+
+}
+
+.about-me .content-about {
   align-items: center;
-  border-top: 1px solid rgb(221, 221, 221);
+  padding: 20px;
+  
 }
 
-div.menu_footer .informations {
-  padding: 20px 0;
+.about-me .content-about .about-me-pic {
+  width: 15%;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
 }
 
-div.menu_footer .informations ul {
-  list-style: none;
+div.content-about h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 28px;
+  text-align: center;
+  color: #282828;
 }
 
-div.menu_footer .informations ul li {
-  display: inline-block;
-  margin-right: 10px;
-  color: #000;
-  font-size: 10px;
+
+div.content-about h1 strong {
+  font-weight: 900;
 }
 
-div.menu_footer .informations ul li a {
+div.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  margin-top: 20px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2.5rem;
   text-decoration: none;
-  color: #000;
-  font-size: 10px;
+  transition: all 0.15s ease;
+  color: #323232;
+  z-index8 9;
 }
 
-div.menu_footer .informations ul li a:hover {
-  text-decoration: underline;
+.social-icon:hover {
+  color: #282828;
 }
 
-div.menu_footer .socias {
- padding: 20px 0;
+
+h2{
+  color:#323232;
+  font-size:30px;
+  margin-left:15px;
+}
+p{
+  font-size:20px;
+  line-height:40px;
+  margin-left:15px;
 }
 
-div.menu_footer .socias ul {
-  list-style: none;
+@media(max-width: 772px){
+  .about-me {
+    max-width: 772px;
+  }
+  .card {
+    width: 420px;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
 }
 
-div.menu_footer .socias ul li {
-  display: inline-block;
-  margin-left: 10px;
-  text-decoration: none;
+@media(max-width: 530px) {
+  .logo {
+    margin-left: 10px;
+    margin: 10px 0;
+    width: 150px;
+  }
+  ul {
+    display: none;
+  }
+  .one,
+  .two,
+  .three {
+    background-color: red;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 300ms;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 25px;
+    margin-top: 20px;
+  }
+
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: #FFF;
+  }
+  
+  .menu-section.on nav ul{
+    display: block;
+  }
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(7px, -9px);
+  }
+  
+  .menu-section.on nav ul {
+    margin-right: 0;
+  }
+
+  .menu-section.on nav ul li {
+    text-align: center;
+    display: block;
+    margin-right: 0;
+    margin-top: 30%;
+  }
+
+  .menu-section.on nav ul li:nth-child(2){
+    margin-top: 0;
+  }
+  .menu-section.on nav ul li a {
+    font-size: 1.5rem;
+  }
+
+
+  .about-me .content-about .about-me-pic {
+    width: 30%;
+  }
+
+  div.content-about h1 {
+    font-size: 32px;
+  }
 }
 
-div.menu_footer .socias ul li a {
-  text-decoration: none;
-  color: #000;
-}
+@media(max-width: 375px) {
 
-div.menu_footer .socias ul li a:hover {
-  color: #cb6461;
-}
-
-div.menu_footer .socias ul li:nth-child(1){
-  margin-right: 15px;
-}
-
-div.menu_footer .socias ul li:nth-child(2){
-  margin-right: 15px;
+  .logo{
+    width: 140px;
+    margin-left: 25px;
+  }
+  .card {
+    width: 320px;
+    margin-right: 0;
+    margin-left: 10px;
+  }
 }
